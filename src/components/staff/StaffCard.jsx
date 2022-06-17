@@ -4,25 +4,28 @@ import {
     CardMedia,
     CardContent,
 } from '@mui/material';
-import staffInfo from "../Data/StaffInfo.json"
 
-export default function staffCard({note}) {
+export default function staffCard({ staff }) {
+
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ 
+        maxWidth: 345,
+        color: "primary.realDark",
+        backgroundColor:"primary.light"}}>
             <CardMedia
                 component="img"
-                src={staffInfo.image}
+                image={staff.image}
                 alt="Profile Picture"
                 sx={{
                     width: "100%",
                     height: "25rem"
-                }}/>
+                }} />
             <CardContent>
                 <Typography variant="h5">
-                    {note.name}
+                    {staff.name}
                 </Typography>
-                <Typography variant="body1" color="text.secondary">
-                    {note.job}
+                <Typography variant="body1" color="primary.dark">
+                    {staff.job}
                 </Typography>
             </CardContent>
         </Card>

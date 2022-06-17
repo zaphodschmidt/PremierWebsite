@@ -13,7 +13,6 @@ const Box1 = styled(Box, {})({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    //width: "40vw",
 });
 
 export default function OrderComplete() {
@@ -22,11 +21,13 @@ export default function OrderComplete() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            
         }}>
             <Paper sx={{
                 width: "90vw",
                 margin: "25vh",
                 backgroundColor: "primary.light",
+                color:"primary.realDark",
             }}>
                 <Grid>
                     <Box1>
@@ -35,6 +36,7 @@ export default function OrderComplete() {
                             sx={{
                                 padding: "2vw",
                                 textAlign: "center",
+                                color: "primary",
                             }}>
                             Order Complete!
                         </Typography>
@@ -56,6 +58,7 @@ export default function OrderComplete() {
                             sx={{
                                 padding: "1vw",
                                 textAlign: "center",
+                                color:"primary.realDark",
                             }}>
                             <Link to="/">Go Back to the Homepage</Link>
                         </Typography>

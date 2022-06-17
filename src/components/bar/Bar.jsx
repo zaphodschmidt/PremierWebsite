@@ -1,6 +1,8 @@
 import "./bar.scss";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faHandHoldingMedical,faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import {faHandHoldingMedical} from '@fortawesome/free-solid-svg-icons';
+import FaxIcon from '@mui/icons-material/Fax';
+
 export default function Bar({ menuOpen, setMenuOpen }) {
     return (
         <div className={"Bar " + (menuOpen && "active")}>
@@ -12,9 +14,9 @@ export default function Bar({ menuOpen, setMenuOpen }) {
                     </div>
                     <div className="itemContainer">
                         <div className="icon">
-                            <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
+                            <FaxIcon fontSize="large"/>
                         </div>
-                        <span>Email@here.com</span>
+                        <span>Fax: 559-781-5184</span>
                     </div>
                 </div>
                 <div className="right">

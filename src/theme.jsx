@@ -1,4 +1,6 @@
-import { createTheme } from '@mui/material/styles';
+import {
+    createTheme,
+} from '@mui/material/styles';
 
 const mainBackgroundColor = '#a3d6f5'
 const topBarAndMenuBackground = '#66a7c5'
@@ -23,30 +25,65 @@ const customTheme = createTheme({
         },
     },
     components: {
-        MuiPaper: {
-            defaultProps: {     
-            }
-        },
-        MuiButton: {
-            defaultProps: {
-                variant: "contained",
-                //color:"primary.dark"
-            }
-        },
         MuiTextField: {
-            defaultProps: {
-                label: "pussy",
-            }
+            styleOverrides: {
+                root: {
+                    '& label': {
+                        color: activeTextColorForBarMenu,
+                    },
+                    '& label.Mui-focused': {
+                        color: activeTextColorForBarMenu,
+                    },
+                    '& .MuiOutlinedInput-root': {
+                        color: activeTextColorForBarMenu,
+                        '&.Mui-focused fieldset': {
+                            borderColor: activeTextColorForBarMenu,
+                        },
+                    },
+                },
+            },
         },
         MuiSelect: {
-            defaultProps: {
-            }
+            styleOverrides: {
+                root: {
+                    '&.Mui-focused fieldset': {
+                        '&.MuiOutlinedInput-notchedOutline': {
+                            borderColor: activeTextColorForBarMenu,
+                        }
+                    },
+                },
+                select: {
+                    color: activeTextColorForBarMenu,
+                },
+            },
         },
-        MuiBox: {
-            defaultProps: {
-                background: "secondary",
-            }
-        }
+        MuiMenuItem: {
+            styleOverrides: {
+                root: {
+                    color: activeTextColorForBarMenu,
+                },
+            },
+        },
+        MuiFormHelperText: {
+            styleOverrides: {
+                root: {
+                    textTransform: 'initial',
+                    fontSize: '1rem',
+                },
+            },
+        },
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    color: 'white',
+                    backgroundColor: topBarAndMenuBackground,
+                    '&:hover': {
+                        color: 'white',
+                        backgroundColor: topBarAndMenuBackground,
+                    },
+                },
+            },
+        },
     }
 });
 export default customTheme
