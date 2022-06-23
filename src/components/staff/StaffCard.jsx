@@ -11,7 +11,10 @@ export default function staffCard({ staff }) {
         <Card sx={{ 
         maxWidth: 345,
         color: "primary.realDark",
-        backgroundColor:"primary.light"}}>
+        backgroundColor:"primary.main",
+        boxShadow:3,
+        // padding:"1rem",
+        }}>
             <CardMedia
                 component="img"
                 image={staff.image}
@@ -24,7 +27,7 @@ export default function staffCard({ staff }) {
                 <Typography variant="h5">
                     {staff.name}
                 </Typography>
-                <Typography variant="body1" color="primary.dark">
+                <Typography variant="body1" color="primary.realDark">
                     {staff.job}
                 </Typography>
             </CardContent>

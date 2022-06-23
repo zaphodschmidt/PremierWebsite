@@ -2,42 +2,52 @@ import {
     createTheme,
 } from '@mui/material/styles';
 
-const mainBackgroundColor = '#a3d6f5'
-const topBarAndMenuBackground = '#66a7c5'
-const textColorForBarMenu = '#f0eceb'
-const activeTopBarAndMenuBackground = '#ceebfb'
-const activeTextColorForBarMenu = '#2b3f81'
+//Primary
+const button = '#3F8EFC'
+const dark = '#2667FF'
+const realDark = '#263238'
+
+//Secondary
+// const dark = '#66a7c5'
+// const realDark = '#2b3f81'
+
+const Outline = '#87BFFF';
 
 const customTheme = createTheme({
     palette: {
         primary: {
-            light: activeTopBarAndMenuBackground,
-            main: mainBackgroundColor,
-            dark: topBarAndMenuBackground,
-            text: textColorForBarMenu,
-            realDark: activeTextColorForBarMenu,
+            contact:'#f5f5f5',
+            button: button,
+            text: '#ADD7F6',
+            light: '#87BFFF',
+            main: '#FFFFFF',
+            dark: dark,
+            realDark: realDark,
         },
         secondary: {
-            light: '#ff7961',
-            main: '#f44336',
-            dark: '#ba000d',
-            contrastText: '#000',
+            button: button,
+            text: '#f0eceb',
+            light: '#ceebfb',
+            main: '#a3d6f5',
+            dark: dark,
+            realDark: realDark,
         },
+
     },
     components: {
         MuiTextField: {
             styleOverrides: {
                 root: {
                     '& label': {
-                        color: activeTextColorForBarMenu,
+                        color: realDark,
                     },
                     '& label.Mui-focused': {
-                        color: activeTextColorForBarMenu,
+                        color: realDark,
                     },
                     '& .MuiOutlinedInput-root': {
-                        color: activeTextColorForBarMenu,
+                        color: realDark,
                         '&.Mui-focused fieldset': {
-                            borderColor: activeTextColorForBarMenu,
+                            borderColor: Outline,
                         },
                     },
                 },
@@ -48,19 +58,19 @@ const customTheme = createTheme({
                 root: {
                     '&.Mui-focused fieldset': {
                         '&.MuiOutlinedInput-notchedOutline': {
-                            borderColor: activeTextColorForBarMenu,
+                            borderColor: Outline,
                         }
                     },
                 },
                 select: {
-                    color: activeTextColorForBarMenu,
+                    color: realDark,
                 },
             },
         },
         MuiMenuItem: {
             styleOverrides: {
                 root: {
-                    color: activeTextColorForBarMenu,
+                    color: realDark,
                 },
             },
         },
@@ -76,10 +86,10 @@ const customTheme = createTheme({
             styleOverrides: {
                 root: {
                     color: 'white',
-                    backgroundColor: topBarAndMenuBackground,
+                    backgroundColor: button,
                     '&:hover': {
                         color: 'white',
-                        backgroundColor: topBarAndMenuBackground,
+                        backgroundColor: button,
                     },
                 },
             },
@@ -87,25 +97,4 @@ const customTheme = createTheme({
     }
 });
 export default customTheme
-
-
-// $mainColor: rgb(67, 100, 211);
-// $startBlue: rgb(206,235,251);
-
-// $endBlue: rgb(102,167,197);
-// $theRed: rgb(238,50,51);
-// $theWhite: rgb(240,236,235);
-// $theGrey: rgb(108,116,118);
-
-
-// $portfolioBack:rgb(163,214,245);
-
-// //Main Background color
-// $mainBackgroundColor: rgb(163,214,245);
-
-// //Top Bar and Menu colors
-// $topBarAndMenuBackground: rgb(102,167,197);
-// $textColorForBarMenu:rgb(240,236,235);
-// $activeTopBarAndMenuBackground:rgb(206,235,251);
-// $activeTextColorForBarMenu:rgb(43, 63, 129);
 

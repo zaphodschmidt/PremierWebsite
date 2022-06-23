@@ -32,7 +32,7 @@ export default function OrderComplete() {
                                 display: 'flex',
                                 fontWeight: 700,
                             }} variant="h2">
-                            Order Complete!
+                            Message Sent
                         </Typography>
                     </Paper>
                 </Grid>
@@ -47,7 +47,7 @@ export default function OrderComplete() {
                     }}>
                         <Typography variant="h3" align='center'
                             sx={{ fontWeight: 400, }}>
-                            Thank you for ordering from Premier Pathology
+                            Thank you for contacting us!
                         </Typography>
                     </Paper>
                 </Grid>

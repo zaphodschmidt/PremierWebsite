@@ -7,10 +7,15 @@ import {
 
 export default function ItemBox({ item }) {
     return (
-        <Card>
-            <CardContent sx={{ 
+        <Card sx={{
+            border: 1,
+            borderColor: 'primary.contact',
+            boxShadow:2,
+        }}>
+            <CardContent sx={{
                 maxWidth: 345,
-                backgroundColor:"white"}}>
+                backgroundColor: "primary.main"
+            }}>
                 <TextField
                     name={item.name}
                     type="number"
@@ -19,8 +24,6 @@ export default function ItemBox({ item }) {
                     label={item.product}
                     onChange={(e) => e.target.value < 0 ? (e.target.value = 0) : e.target.value}
                     fullWidth
-                    
-
                 />
             </CardContent>
             <CardMedia
@@ -29,8 +32,8 @@ export default function ItemBox({ item }) {
                 alt="Product Image"
                 sx={{
                     width: "100%",
-                    height: "25rem"
-                }}/>
+                    height: "15rem"
+                }} />
         </Card>
     )
-}
+};

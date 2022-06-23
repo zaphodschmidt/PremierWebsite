@@ -33,7 +33,12 @@ export default function OrderForm() {
         setZip(options[e.target.value].zip)
     }
     return (
-        <Card sx={{backgroundColor: "white"}}>
+        <Card sx={{
+        backgroundColor: "primary.main",
+        margin: "2vh",
+        border: 2,
+        borderColor: 'primary.contact',
+        }}>
             <CardContent>
                 <Grid container spacing={1}>
                     <Grid xs={12} sm={12} md={6} lg={6} item>

@@ -1,15 +1,19 @@
 import {
     Typography,
     Grid,
-    Container
+    Paper,
 } from '@mui/material';
-// import React, { useState, useEffect } from 'react';
 import StaffCard from "./StaffCard.jsx"
-import {data} from "../../Data/StaffInfo"
-export default function Staff(){
+import { data } from "../../Data/StaffInfo"
+export default function Staff() {
     return (
-        <Container maxWidth="xl">
-            <Typography variant="h2"
+        <Paper
+            sx={{
+                backgroundColor: "primary.contact",
+                width: "100%",
+                height: "100%",
+            }}>
+            <Typography variant="h3"
                 sx={{
                     display: "flex",
                     justifyContent: "center",
@@ -19,12 +23,12 @@ export default function Staff(){
                 Premier Pathology Staff
             </Typography>
             <Grid container>
-                {data.map(staff =>(
-                    <Grid item key={staff.id} xs={12} sm={6} md={4} xl={3} sx={{ padding: "1rem" }}>
-                    <StaffCard staff={staff}/>
+                {data.map(staff => (
+                    <Grid item key={staff.id} xs={12} sm={6} md={4} lg={3} sx={{ padding: "1rem" }}>
+                        <StaffCard staff={staff} />
                     </Grid>
                 ))}
             </Grid>
-        </Container>
+        </Paper>
     )
 }
