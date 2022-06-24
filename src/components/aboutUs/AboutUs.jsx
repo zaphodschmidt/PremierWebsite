@@ -19,7 +19,6 @@ export default function AboutUs() {
             height: "100%",
         }}>
             <Container>
-
                 <Grid container spacing={3}
                     sx={{ marginTop: "15vh" }}>
                     <Grid xs={12} sm={12} md={6} lg={6} item>
@@ -41,16 +40,12 @@ export default function AboutUs() {
                             <Box sx={{my:"3rem"}}>
                             <Typography variant="h4" sx={{
                                 display: 'flex',
-                                // justifyContent: 'center',
                             }}>
                                 Our Mission:
                             </Typography>
                             <Typography variant="h6" sx={{
                                 display: 'flex',
-                                // justifyContent: 'center',
-
                             }}>
-
                                 To provide quality, comprehensive, and responsive outpatient pathology service.
                             </Typography>
                         </Box>
@@ -67,10 +62,7 @@ export default function AboutUs() {
                                 alt="" />
                         </Box>
                     </Grid>
-
                     <Divider flexItem/>
-
-                    
                     <Divider/>
                     <Grid xs={12} sm={12} md={6} lg={6} item>
                         <Box>

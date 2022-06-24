@@ -1,19 +1,7 @@
-import {
-    createTheme,
-} from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 
-//My Pick
-// const button = '#3F8EFC'
-// const dark = '#2667FF'
-
-//Mom's Pick
-// const button = '#6497b1'
-// const dark = '#005b96'
-
-//third pick
 const dark = '#107dac'
 const button = '#189ad3'
-
 const realDark = '#263238'
 const Outline = '#87BFFF';
 
@@ -36,7 +24,6 @@ const customTheme = createTheme({
             dark: dark,
             realDark: realDark,
         },
-
     },
     components: {
         MuiTextField: {

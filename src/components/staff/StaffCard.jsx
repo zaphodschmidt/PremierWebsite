@@ -13,7 +13,6 @@ export default function staffCard({ staff }) {
         color: "primary.realDark",
         backgroundColor:"primary.main",
         boxShadow:3,
-        // padding:"1rem",
         }}>
             <CardMedia
                 component="img"
