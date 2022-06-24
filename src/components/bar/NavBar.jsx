@@ -114,7 +114,11 @@ export default function NavBar() {
                                         height: '70px',
                                     }}>
                                     <Grid container direction="row" alignItems="center" >
-                                        <Grid item>
+                                        <Grid item
+                                        sx={{
+                                            display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
+                                            alignItems: 'center',
+                                        }}>
                                             <HealthAndSafetyIcon fontSize="large" />
                                         </Grid>
                                         <Grid item>
