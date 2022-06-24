@@ -19,6 +19,7 @@ import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
 import ContactPageOutlinedIcon from '@mui/icons-material/ContactPageOutlined';
+import CallIcon from '@mui/icons-material/Call';
 
 const Root = styled('div')(({ theme }) => ({
     padding: theme.spacing(1),
@@ -117,7 +118,7 @@ export default function NavBar() {
                                             <HealthAndSafetyIcon fontSize="large" />
                                         </Grid>
                                         <Grid item>
-                                            <Typography variant='h6'>Premier Pathology</Typography>
+                                            <Typography variant='h6'>Premier Pathology Laboratories, Inc.</Typography>
                                         </Grid>
                                     </Grid>
                                 </ListItemButton>
@@ -125,6 +126,25 @@ export default function NavBar() {
                             <Grid item
                                 sx={{
                                     display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
+                                    alignItems: 'center',
+                                }}>
+                                <Grid container direction="row"
+                                    sx={{
+                                        display: 'flex',
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                    }}>
+                                    <Grid item>
+                                        <CallIcon fontSize="large" />
+                                    </Grid>
+                                    <Grid item>
+                                        <Typography variant='h6'>559-781-5174</Typography>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+                            <Grid item
+                                sx={{
+                                    display: { xs: "none", sm: "none", md: "none", lg: "flex" },
                                     alignItems: 'center',
                                 }}>
                                 <Grid container direction="row"

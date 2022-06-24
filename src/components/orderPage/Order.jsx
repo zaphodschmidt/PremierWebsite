@@ -20,7 +20,7 @@ export default function Clients() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_vhaq3ze', 'template_weo6xea', form.current, 'YjNDu73ZCl2NQ6bYL')
+        emailjs.sendForm('service_ei60b4l', 'template_weo6xea', form.current, 'YjNDu73ZCl2NQ6bYL')
             .then((result) => {
                 console.log(result.text);
                 navigate('/orderComplete')

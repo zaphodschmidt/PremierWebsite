@@ -11,8 +11,6 @@ import {
 import Photo from "../../photos/GeneralPhotos/aboutUs.svg"
 import Photo2 from "../../photos/GeneralPhotos/aboutUs2.svg"
 
-
-
 export default function AboutUs() {
     return (
         <Paper sx={{

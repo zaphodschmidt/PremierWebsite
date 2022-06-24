@@ -56,7 +56,7 @@ export default function Home() {
                             <Grid item xs={6} sm={6} md={4} lg={4}
                             sx={{marginY:"1rem"}}>
                                 <Button  href="/clients" fullWidth>
-                                    Place an Order
+                                    Order Supplies
                                 </Button>
                             </Grid>
                             <Grid item xs={6} sm={6} md={4} lg={4}

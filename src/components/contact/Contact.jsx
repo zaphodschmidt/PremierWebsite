@@ -6,6 +6,7 @@ import {
     Box,
     Paper,
 } from '@mui/material';
+import FaxIcon from '@mui/icons-material/Fax';
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -78,10 +79,11 @@ export default function Contact() {
                                         }} variant="h5"
                                             align="center">
                                             <CallIcon fontSize="large" />
-                                            559 781-5174
+                                            559-781-5174
                                         </Typography>
                                     </Paper>
                                 </Grid>
+                                
                                 <Grid item xs={12} sm={12} md={6} lg={6}>
                                     <Paper sx={{
                                         display: 'flex',
@@ -97,8 +99,28 @@ export default function Contact() {
                                             flexWrap: 'wrap',
                                         }} variant="h5"
                                             align="center">
+                                            <FaxIcon fontSize="large" />
+                                            Fax: 559-781-5184
+                                        </Typography>
+                                    </Paper>
+                                </Grid>
+                                <Grid item xs={12} sm={12} md={12} lg={12}>
+                                    <Paper sx={{
+                                        display: 'flex',
+                                        justifyContent: "center",
+                                        backgroundColor: "primary.main",
+                                        boxShadow: "none",
+                                        color: "primary.realDark",
+                                        padding: ".5rem"
+                                    }}>
+                                        <Typography sx={{
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            flexWrap: 'wrap',
+                                        }} variant="h5"
+                                            align="center">
                                             <EmailIcon fontSize="large" />
-                                            Cool@coolmail.com
+                                            JosieMartinez.premierpathology@gmail.com
                                         </Typography>
                                     </Paper>
                                 </Grid>

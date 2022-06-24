@@ -2,15 +2,19 @@ import {
     createTheme,
 } from '@mui/material/styles';
 
-//Primary
-const button = '#3F8EFC'
-const dark = '#2667FF'
+//My Pick
+// const button = '#3F8EFC'
+// const dark = '#2667FF'
+
+//Mom's Pick
+// const button = '#6497b1'
+// const dark = '#005b96'
+
+//third pick
+const dark = '#107dac'
+const button = '#189ad3'
+
 const realDark = '#263238'
-
-//Secondary
-// const dark = '#66a7c5'
-// const realDark = '#2b3f81'
-
 const Outline = '#87BFFF';
 
 const customTheme = createTheme({
@@ -19,7 +23,7 @@ const customTheme = createTheme({
             contact:'#f5f5f5',
             button: button,
             text: '#ADD7F6',
-            light: '#87BFFF',
+            light: Outline,
             main: '#FFFFFF',
             dark: dark,
             realDark: realDark,
